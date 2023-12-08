@@ -25,7 +25,8 @@ public class CheckoutFinalPage {
         System.out.println("- Current URL: " +driver.getCurrentUrl());
         System.out.println(" ");
         System.out.println("- Order Complete! "+textOrderNo.getText());
-        System.out.println(" Thank you!");
+        System.out.println("- Thank you!");
+        System.out.println(" ");
     }
 
 }

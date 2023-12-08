@@ -60,7 +60,6 @@ public class CheckoutShippingPage {
     WebElement linkViewEditCart;
     @FindBy(xpath = "//span[normalize-space()='Next']")
     WebElement buttonNext;
-
     public boolean verifyOrderSummary(){
         return blockOrderSummary.isDisplayed();
     }

@@ -39,6 +39,7 @@ public class CheckoutPaymentPage {
     WebElement buttonPaceOrder;
 
     public void verifyBillingShippingSync(){
+        System.out.println(" ");
         System.out.println("- Current URL: " +driver.getCurrentUrl());
         if (!buttonBillingShippingSame.isSelected()){
             buttonBillingShippingSame.click();

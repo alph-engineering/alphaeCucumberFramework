@@ -1,5 +1,6 @@
 package testcases;
 
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -8,15 +9,7 @@ import org.testng.annotations.Test;
 import pageobjects.*;
 import utils.BrowserFactory;
 import utils.GenericMethods;
-import utils.ReadData;
-
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.Properties;
-
-import static utils.ReadData.propertyConfig;
+import utils.Log;
 
 public class BaseTest {
     WebDriver driver = null;
@@ -26,6 +19,7 @@ public class BaseTest {
     CheckoutShippingPage checkoutShippingPage;
     CheckoutPaymentPage checkoutPaymentPage;
     CheckoutFinalPage checkoutFinalPage;
+
 
     @BeforeClass(groups = {"all"})
     public void setUp(){
@@ -142,7 +136,6 @@ public class BaseTest {
     public void tearDown(){
        System.out.println("- Application Closed Successfully");
         driver.quit();
-
     }
 
 }

@@ -67,7 +67,6 @@ public class CheckoutShippingPage {
         System.out.println("- Current URL: " +driver.getCurrentUrl());
         System.out.println(" ");
         System.out.println("- Shipping data entered.");
-        System.out.println(textOrderSummary.getText());
     }
     public void enterShippingDetails(){
         readData = new ReadData();

@@ -1,6 +1,7 @@
 package stepdefinitions;
 
 
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -241,6 +242,13 @@ public class ShopWH09StepDef {
     @Then("Order confirmation # is displayed")
     public void confirmOrderSuccess() {
         checkoutFinalPage.confirmOrderComplete();
+    }
+
+    // Teardown
+
+    @After
+    public void tearDown(){
+        driver.quit();
     }
 
 

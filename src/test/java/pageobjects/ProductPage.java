@@ -22,7 +22,7 @@ public class ProductPage {
     WebElement listProducts;
     @FindBy(xpath = "//div[4]//div[2]//ul[1]//li[3]//a[1]")
     WebElement buttonNextListProducts;
-    @FindBy(xpath = "//img[@alt='Ariel Roll Sleeve Sweatshirt']")
+    @FindBy(xpath = "//*[@id='maincontent']/div[3]/div[1]/div[4]/ol/li[9]/div/a/span/span/img")
     WebElement selectProduct;
     @FindBy(xpath = "//footer[@class='page-footer']")
     WebElement footerAllText;
@@ -34,12 +34,13 @@ public class ProductPage {
     public void actionSelectProduct(){ // Actions not working in Firefox
         Actions action = new Actions(driver);
         action.moveToElement(selectProduct).perform();
-        GenericMethods.pauseExecutionFor(2);
+        GenericMethods.pauseExecutionFor(3);
         action.moveToElement(selectProduct).click().perform();
     }
     public void selectProduct(){
-        WebElement selectProduct = driver.findElement(By.xpath("//img[@alt='Ariel Roll Sleeve Sweatshirt']"));
+        WebElement selectProduct = driver.findElement(By.xpath("//*[@id='maincontent']/div[3]/div[1]/div[4]/ol/li[9]/div/a/span/span/img"));
         selectProduct.click();
+        GenericMethods.pauseExecutionFor(2);
     }
 
 

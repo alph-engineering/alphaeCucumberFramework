@@ -11,6 +11,5 @@
         <classes>
             <class name="testcases.BaseTest"/>
         </classes>
-
     </test>
 </suite>

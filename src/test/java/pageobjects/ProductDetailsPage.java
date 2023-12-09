@@ -64,9 +64,11 @@ public class ProductDetailsPage {
         }
     }
     public void sizeSelection(){
+
         selectSizeMedium.click();
     }
     public void colorSelection() {
+
         selectColorGreen.click();
     }
     public void inputQTY(){
@@ -85,6 +87,10 @@ public class ProductDetailsPage {
     }
     public void viewFooter(){
         footerAllText.isDisplayed();
+    }
+
+    public void cartIsPresent(){
+        buttonShowCartOpen.isDisplayed();
     }
     public void proceedToCheckout(){
         buttonShowCartOpen.click();

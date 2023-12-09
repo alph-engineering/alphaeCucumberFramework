@@ -1,5 +1,6 @@
 /Users/alph/ae/git/alphaeCucumberFramework/src/test/java/pageobjects/CheckoutFinalPage.java
 /Users/alph/ae/git/alphaeCucumberFramework/src/test/java/pageobjects/ProductPage.java
+/Users/alph/ae/git/alphaeCucumberFramework/src/test/java/setup/TestRunner.java
 /Users/alph/ae/git/alphaeCucumberFramework/src/test/java/pageobjects/TestCode.java
 /Users/alph/ae/git/alphaeCucumberFramework/src/test/java/pageobjects/CreateAccountPage.java
 /Users/alph/ae/git/alphaeCucumberFramework/src/test/java/pageobjects/CheckoutShippingPage.java
@@ -7,6 +8,8 @@
 /Users/alph/ae/git/alphaeCucumberFramework/src/test/java/pageobjects/ProductDetailsPage.java
 /Users/alph/ae/git/alphaeCucumberFramework/src/test/java/pageobjects/CheckoutPaymentPage.java
 /Users/alph/ae/git/alphaeCucumberFramework/src/test/java/utils/GenericMethods.java
+/Users/alph/ae/git/alphaeCucumberFramework/src/test/java/stepdefinitions/ShopWH09StepDef.java
+/Users/alph/ae/git/alphaeCucumberFramework/src/test/java/utils/Log.java
 /Users/alph/ae/git/alphaeCucumberFramework/src/test/java/utils/ReadData.java
 /Users/alph/ae/git/alphaeCucumberFramework/src/test/java/pageobjects/HomePage.java
 /Users/alph/ae/git/alphaeCucumberFramework/src/test/java/pageobjects/CustomerLoginPage.java

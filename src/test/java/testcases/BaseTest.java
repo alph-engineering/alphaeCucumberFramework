@@ -89,6 +89,7 @@ public class BaseTest {
     }
     @Test(priority = 7, groups = {"all"})
     public void confirmSizeSelection(){
+
         productDetailsPage.sizeSelection();
     }
     @Test(priority = 8, groups = {"all"})
@@ -106,7 +107,9 @@ public class BaseTest {
     }
     @Test(priority = 11, groups = {"all"})
     public void viewFooter(){
+
         productDetailsPage.viewFooter();
+
     }
     @Test(priority = 12, groups = {"all"})
     public void proceedToCheckout(){

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-09T02:33:23 PST" name="Single" finished-at="2023-12-09T02:34:31 PST" duration-ms="67831">
+    <groups>
+      <group name="all">
+        <method signature="BaseTest.confirmApplicationLaunch()[pri:1, instance:testcases.BaseTest@5d740a0f]" name="confirmApplicationLaunch" class="testcases.BaseTest"/>
+        <method signature="BaseTest.confirmProductsListed()[pri:2, instance:testcases.BaseTest@5d740a0f]" name="confirmProductsListed" class="testcases.BaseTest"/>
+        <method signature="BaseTest.confirmLinkNavigation()[pri:3, instance:testcases.BaseTest@5d740a0f]" name="confirmLinkNavigation" class="testcases.BaseTest"/>
+        <method signature="BaseTest.selectProductWH09()[pri:4, instance:testcases.BaseTest@5d740a0f]" name="selectProductWH09" class="testcases.BaseTest"/>
+        <method signature="BaseTest.confirmAddToCartSelection()[pri:5, instance:testcases.BaseTest@5d740a0f]" name="confirmAddToCartSelection" class="testcases.BaseTest"/>
+        <method signature="BaseTest.getProductDetails()[pri:6, instance:testcases.BaseTest@5d740a0f]" name="getProductDetails" class="testcases.BaseTest"/>
+        <method signature="BaseTest.confirmSizeSelection()[pri:7, instance:testcases.BaseTest@5d740a0f]" name="confirmSizeSelection" class="testcases.BaseTest"/>
+        <method signature="BaseTest.confirmColorSelection()[pri:8, instance:testcases.BaseTest@5d740a0f]" name="confirmColorSelection" class="testcases.BaseTest"/>
+        <method signature="BaseTest.editQTY()[pri:9, instance:testcases.BaseTest@5d740a0f]" name="editQTY" class="testcases.BaseTest"/>
+        <method signature="BaseTest.addItemToCart()[pri:10, instance:testcases.BaseTest@5d740a0f]" name="addItemToCart" class="testcases.BaseTest"/>
+        <method signature="BaseTest.viewFooter()[pri:11, instance:testcases.BaseTest@5d740a0f]" name="viewFooter" class="testcases.BaseTest"/>
+        <method signature="BaseTest.proceedToCheckout()[pri:12, instance:testcases.BaseTest@5d740a0f]" name="proceedToCheckout" class="testcases.BaseTest"/>
+        <method signature="BaseTest.confirmShipping()[pri:13, instance:testcases.BaseTest@5d740a0f]" name="confirmShipping" class="testcases.BaseTest"/>
+        <method signature="BaseTest.confirmPayment()[pri:14, instance:testcases.BaseTest@5d740a0f]" name="confirmPayment" class="testcases.BaseTest"/>
+        <method signature="BaseTest.confirmOrderSuccess()[pri:15, instance:testcases.BaseTest@5d740a0f]" name="confirmOrderSuccess" class="testcases.BaseTest"/>
+      </group> <!-- all -->
+    </groups>
+    <test started-at="2023-12-09T02:33:23 PST" name="SingleTest" finished-at="2023-12-09T02:34:31 PST" duration-ms="67831">
+      <class name="testcases.BaseTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.BaseTest@5d740a0f]" started-at="2023-12-09T02:33:24 PST" name="setUp" finished-at="2023-12-09T02:33:37 PST" duration-ms="12978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="confirmApplicationLaunch()[pri:1, instance:testcases.BaseTest@5d740a0f]" started-at="2023-12-09T02:33:37 PST" name="confirmApplicationLaunch" finished-at="2023-12-09T02:33:37 PST" duration-ms="440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmApplicationLaunch -->
+        <test-method signature="confirmProductsListed()[pri:2, instance:testcases.BaseTest@5d740a0f]" started-at="2023-12-09T02:33:37 PST" name="confirmProductsListed" finished-at="2023-12-09T02:33:37 PST" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmProductsListed -->
+        <test-method signature="confirmLinkNavigation()[pri:3, instance:testcases.BaseTest@5d740a0f]" started-at="2023-12-09T02:33:37 PST" name="confirmLinkNavigation" finished-at="2023-12-09T02:33:43 PST" duration-ms="5945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmLinkNavigation -->
+        <test-method signature="selectProductWH09()[pri:4, instance:testcases.BaseTest@5d740a0f]" started-at="2023-12-09T02:33:43 PST" name="selectProductWH09" finished-at="2023-12-09T02:33:52 PST" duration-ms="8824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectProductWH09 -->
+        <test-method signature="confirmAddToCartSelection()[pri:5, instance:testcases.BaseTest@5d740a0f]" started-at="2023-12-09T02:33:52 PST" name="confirmAddToCartSelection" finished-at="2023-12-09T02:33:52 PST" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmAddToCartSelection -->
+        <test-method signature="getProductDetails()[pri:6, instance:testcases.BaseTest@5d740a0f]" started-at="2023-12-09T02:33:52 PST" name="getProductDetails" finished-at="2023-12-09T02:33:52 PST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProductDetails -->
+        <test-method signature="confirmSizeSelection()[pri:7, instance:testcases.BaseTest@5d740a0f]" started-at="2023-12-09T02:33:52 PST" name="confirmSizeSelection" finished-at="2023-12-09T02:33:52 PST" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmSizeSelection -->
+        <test-method signature="confirmColorSelection()[pri:8, instance:testcases.BaseTest@5d740a0f]" started-at="2023-12-09T02:33:52 PST" name="confirmColorSelection" finished-at="2023-12-09T02:33:53 PST" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmColorSelection -->
+        <test-method signature="editQTY()[pri:9, instance:testcases.BaseTest@5d740a0f]" started-at="2023-12-09T02:33:53 PST" name="editQTY" finished-at="2023-12-09T02:33:53 PST" duration-ms="360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editQTY -->
+        <test-method signature="addItemToCart()[pri:10, instance:testcases.BaseTest@5d740a0f]" started-at="2023-12-09T02:33:53 PST" name="addItemToCart" finished-at="2023-12-09T02:33:59 PST" duration-ms="6199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemToCart -->
+        <test-method signature="viewFooter()[pri:11, instance:testcases.BaseTest@5d740a0f]" started-at="2023-12-09T02:33:59 PST" name="viewFooter" finished-at="2023-12-09T02:33:59 PST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewFooter -->
+        <test-method signature="proceedToCheckout()[pri:12, instance:testcases.BaseTest@5d740a0f]" started-at="2023-12-09T02:33:59 PST" name="proceedToCheckout" finished-at="2023-12-09T02:34:11 PST" duration-ms="11784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proceedToCheckout -->
+        <test-method signature="confirmShipping()[pri:13, instance:testcases.BaseTest@5d740a0f]" started-at="2023-12-09T02:34:11 PST" name="confirmShipping" finished-at="2023-12-09T02:34:17 PST" duration-ms="5869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmShipping -->
+        <test-method signature="confirmPayment()[pri:14, instance:testcases.BaseTest@5d740a0f]" started-at="2023-12-09T02:34:17 PST" name="confirmPayment" finished-at="2023-12-09T02:34:31 PST" duration-ms="13727" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmPayment -->
+        <test-method signature="confirmOrderSuccess()[pri:15, instance:testcases.BaseTest@5d740a0f]" started-at="2023-12-09T02:34:31 PST" name="confirmOrderSuccess" finished-at="2023-12-09T02:34:31 PST" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmOrderSuccess -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.BaseTest@5d740a0f]" started-at="2023-12-09T02:34:31 PST" name="tearDown" finished-at="2023-12-09T02:34:31 PST" duration-ms="672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.BaseTest -->
+    </test> <!-- SingleTest -->
+  </suite> <!-- Single -->
+</testng-results>

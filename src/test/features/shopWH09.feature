@@ -1,7 +1,7 @@
 Feature: Add-to-Cart Functionality
 
 
-  Scenario: Browser Launch
+  Scenario Outline: Browser Launch
     Given WebDriver is initiated
     Then Browser launches
 
@@ -37,6 +37,7 @@ Feature: Add-to-Cart Functionality
     Then User gets navigated to Shipping Checkout Page
     Given User is on Shipping Checkout Page
     When User enters shipping data information
+    And UserName {'variable_here'} is used
     And User selects Shipping Method
     And User clicks Next
     Then User gets navigated to Payment Checkout Page

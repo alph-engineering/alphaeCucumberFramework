@@ -15,6 +15,8 @@ import pageobjects.*;
 import utils.BrowserFactory;
 import utils.GenericMethods;
 
+import static utils.ReadData.propertyShip;
+
 public class ShopWH09StepDef {
     //  Before Class
 
@@ -26,7 +28,6 @@ public class ShopWH09StepDef {
     CheckoutShippingPage checkoutShippingPage;
     CheckoutPaymentPage checkoutPaymentPage;
     CheckoutFinalPage checkoutFinalPage;
-
 
 //    public ShopWH09StepDef(WebDriver driver){
 //        this.driver = driver;
@@ -56,10 +57,7 @@ public class ShopWH09StepDef {
         }catch (AssertionError e){
             System.out.println("- Application Failed");
         }
-
     }
-
-
     // Navigate to Shop Eco-Friendly Products
     @Given("The HomePage is loaded")
     public void confirmProductsListed(){
@@ -210,6 +208,12 @@ public class ShopWH09StepDef {
     public void enterShippingData() {
         checkoutShippingPage.enterShippingDetails();
     }
+
+    @And("UserName {} is used")
+    public void usernameIsUsed(String user) {
+        user = propertyShip.getProperty("userName");
+        System.out.println("- UserName '"+user+"' is used");
+    }
     @And("User selects Shipping Method")
     @And("User clicks Next")
     @Then("User gets navigated to Payment Checkout Page")
@@ -250,7 +254,6 @@ public class ShopWH09StepDef {
     public void tearDown(){
         driver.quit();
     }
-
 
 
 

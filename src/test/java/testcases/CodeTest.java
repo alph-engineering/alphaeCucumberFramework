@@ -1,27 +1,22 @@
-package pageobjects;
+package testcases;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import pageobjects.CheckoutShippingPage;
 import utils.BrowserFactory;
 import utils.GenericMethods;
 import utils.ReadData;
 
-public class TestCode {
+public class CodeTest {
     WebDriver driver = null;
     CheckoutShippingPage checkoutShippingPage;
     @BeforeClass
     public void setUp(){
         driver = BrowserFactory.launchGivenBrowser("firefox");
         driver.get("https://magento.softwaretestingboard.com/checkout/#shipping");
-
     }
     @Test
     public void testMethod(){
@@ -39,10 +34,3 @@ public class TestCode {
     }
 
 }
-
-//    @Test
-//    public void selectProduct(){
-//        WebElement select = driver.findElement(By.xpath("//img[@alt='Ariel Roll Sleeve Sweatshirt']"));
-//        genericMethods.pauseExecutionFor(3);
-//        select.click();
-//    }

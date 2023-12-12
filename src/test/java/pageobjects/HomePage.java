@@ -31,7 +31,7 @@ public class HomePage {
     WebElement linkErinRecommends;
     @FindBy(xpath = "//span[normalize-space()='Shop Performance']")
     WebElement linkShopPerformance;
-    @FindBy(xpath = "//span[normalize-space()='Shop Eco-Friendly']")
+    @FindBy(xpath = "//span[normalize-space()='Find conscientious, comfy clothing in our eco-friendly collection']")
     WebElement linkShopEcoFriendly;
     @FindBy(xpath = "//footer[@class='page-footer']")
     WebElement footerElements;

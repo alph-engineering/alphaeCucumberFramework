@@ -45,6 +45,7 @@ public class CheckoutShippingPage {
     @FindBy(name = "city")
     WebElement inputCity;
     @FindBy(name = "region_id")
+    public
     WebElement inputStateProvince;
     @FindBy(name = "postcode")
     WebElement inputZipPostalCode;

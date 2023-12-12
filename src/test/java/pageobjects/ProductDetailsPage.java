@@ -76,6 +76,7 @@ public class ProductDetailsPage {
         inputQTY.sendKeys("2");
     }
     public String productInfo() {
+        GenericMethods.pauseExecutionFor(5);
         return textProductName.getText()+"  |  SKU#: "+textProductSKU.getText();
     }
     public String productDescription(){

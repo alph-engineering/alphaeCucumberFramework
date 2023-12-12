@@ -2,6 +2,7 @@ package stepdefinitions;
 
 
 import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -11,6 +12,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 import pageobjects.*;
 import utils.BrowserFactory;
 import utils.GenericMethods;
@@ -50,7 +52,7 @@ public class ShopWH09StepDef {
     @Then("Browser launches")
     public void confirmApplicationLaunch() {
         driver.get("https://magento.softwaretestingboard.com/");
-        GenericMethods.pauseExecutionFor(1);
+        GenericMethods.pauseExecutionFor(2);
         try {
             Assert.assertTrue(homePage.verifyFooterIsAvailable());
             System.out.println("- Application Launched Successfully");
@@ -59,20 +61,24 @@ public class ShopWH09StepDef {
         }
     }
     // Navigate to Shop Eco-Friendly Products
+    @Test
     @Given("The HomePage is loaded")
     public void confirmProductsListed(){
-
+        GenericMethods.pauseExecutionFor(2);
         System.out.println(" ");
         System.out.println("- Current URL: "+homePage.getCurrentUrl());
         System.out.println(" ");
+        GenericMethods.pauseExecutionFor(2);
         Assert.assertTrue((homePage.verifyEcoFriendlyProductsAvailable()));
         System.out.println("- Shop Eco Friendly Products Available");
+        GenericMethods.pauseExecutionFor(2);
     }
     @When("User selects Shop Eco-Friendly")
     public void userSelectsEcoFriendly(){
+        GenericMethods.pauseExecutionFor(2);
         homePage.clickEcoFriendlyProductsButton();
         System.out.println("- Button 'Shop Eco-Friendly' Clicked");
-        GenericMethods.pauseExecutionFor(1);
+        GenericMethods.pauseExecutionFor(2);
     }
     @Then("User gets navigated to Eco_Friendly Products Page")
     public void confirmLinkNavigation(){
@@ -98,14 +104,14 @@ public class ShopWH09StepDef {
     public void loadProductPage(){
         GenericMethods.pauseExecutionFor(2);
     }
-    @When("User selects Product #WH09")
+    @When("User selects Product WH09")
     public void selectProductWH09() {
         //productPage.selectProduct(); // driver
         productPage.actionSelectProduct(); // Actions
         GenericMethods.pauseExecutionFor(2);
         System.out.println("- Product 'Ariel Roll Sleeve Sweatshirt' Selected");
     }
-    @Then("User gets navigated to Product #WH09 Details Page")
+    @Then("User gets navigated to Product WH09 Details Page")
 
 
 
@@ -115,7 +121,7 @@ public class ShopWH09StepDef {
 //        driver.get("https://magento.softwaretestingboard.com/ariel-roll-sleeve-sweatshirt.html");
 //        GenericMethods.pauseExecutionFor(2);
 //    }
-    @Given("The Product #WH09 Details Page is loaded 2")
+    @Given("The Product WH09 Details Page is loaded 2")
     public void productPageDetailsLoaded(){
         GenericMethods.pauseExecutionFor(2);
         System.out.println("- [Add to Cart] button is displayed");
@@ -136,7 +142,7 @@ public class ShopWH09StepDef {
     @Then("Size Medium is selected")
 
     // Select Product Color
-    @Given("The Product #WH09 Details Page is loaded 3")
+    @Given("The Product WH09 Details Page is loaded 3")
     //    @Given("The Product Page Shop Eco-Friendly is loaded") // Solo Test Scenario - Product Details Page
 //    public void productPageLoaded() {
 //        driver.get("https://magento.softwaretestingboard.com/ariel-roll-sleeve-sweatshirt.html");
@@ -170,7 +176,7 @@ public class ShopWH09StepDef {
 
 
     // Add Product #WH09 to Cart
-    @Given("The Product #WH09 Details Page is loaded 4")
+    @Given("The Product WH09 Details Page is loaded 4")
     public void loadProductDetailsPage(){
         GenericMethods.pauseExecutionFor(1);
     }
@@ -179,11 +185,11 @@ public class ShopWH09StepDef {
         productDetailsPage.addProductToCart();
         GenericMethods.pauseExecutionFor(4);
     }
-    @Then("Product #WH09 with Selections is added to cart")
+    @Then("Product WH09 with Selections is added to cart")
 
 
     // Proceed to checkout
-    @Given("The Product #WH09 is added to cart")
+    @Given("The Product WH09 is added to cart")
     public void cartIsPresent(){
         productDetailsPage.cartIsPresent();
         GenericMethods.pauseExecutionFor(2);
@@ -201,6 +207,7 @@ public class ShopWH09StepDef {
     // Confirm Shipping Details
     @Given("User is on Shipping Checkout Page")
     public void confirmShipping(){
+        GenericMethods.pauseExecutionFor(2);
         Assert.assertTrue(checkoutShippingPage.verifyOrderSummary());
         checkoutShippingPage.orderSummary();
     }
@@ -209,12 +216,12 @@ public class ShopWH09StepDef {
         checkoutShippingPage.enterShippingDetails();
     }
 
-    @And("UserName {} is used")
+    @And("UserName {string} is used")
     public void usernameIsUsed(String user) {
         user = propertyShip.getProperty("userName");
         System.out.println("- UserName '"+user+"' is used");
     }
-    @And("User selects Shipping Method")
+    @And("Shipping Method is selected")
     @And("User clicks Next")
     @Then("User gets navigated to Payment Checkout Page")
     public void userNavigatedToPaymentCheckout(){
@@ -243,18 +250,15 @@ public class ShopWH09StepDef {
 
     // Final Checkout Summary
     @Given("The user navigated successfully to the Final Checkout Page")
-    @Then("Order confirmation # is displayed")
+    @Then("Order confirmation number is displayed")
     public void confirmOrderSuccess() {
         checkoutFinalPage.confirmOrderComplete();
     }
 
     // Teardown
-
     @After
     public void tearDown(){
         driver.quit();
     }
-
-
 
 }

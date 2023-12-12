@@ -1,11 +1,10 @@
-Feature: Add-to-Cart Functionality
+  Feature: Add-to-Cart Functionality
 
   Background: Browser Launch
     Given WebDriver is initiated
     Then Browser launches
 
-  #Scenario Outline: Load Application
-  Scenario: Load Application
+  Scenario Outline: Load Application
     Given The HomePage is loaded
     When User selects Shop Eco-Friendly
     Then User gets navigated to Eco_Friendly Products Page
@@ -37,9 +36,8 @@ Feature: Add-to-Cart Functionality
 
     Given User is on Shipping Checkout Page
     When User enters shipping data information
-    Then UserName 'example' is used
-
-    Given Shipping Method is selected
+    And UserName "<example>" is used
+    And Shipping Method is selected
     And User clicks Next
     Then User gets navigated to Payment Checkout Page
 
@@ -50,3 +48,7 @@ Feature: Add-to-Cart Functionality
 
     Given The user navigated successfully to the Final Checkout Page
     Then Order confirmation number is displayed
+
+    Examples:
+      | example           |
+      | test@engineer.com |

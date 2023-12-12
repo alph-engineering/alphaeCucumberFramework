@@ -5,7 +5,6 @@ pageobjects/HomePage.class
 pageobjects/CustomerLoginPage.class
 pageobjects/CheckoutFinalPage.class
 pageobjects/CheckoutShippingPage.class
-pageobjects/TestCode.class
 utils/BrowserFactory.class
 testcases/BaseTest.class
 pageobjects/ProductPage.class
